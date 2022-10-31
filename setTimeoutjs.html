@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set time out and clearTime out</title>
+</head>
+<body>
+    <div class="container">
+        this is container
+    </div>
+    <script>
+        console.log("this is tutorial 58");
+       // setTimeout--> allows us to run the function once after the intervel of time
+       // cleartime out-->allows us to run the function repeatidly after the intervel of time
+
+       function greet(name,byebye)
+       {
+        console.log("hello goood morning" + name + " " + byebye);
+       }
+       //timeOut= setTimeout(greet,5000,'Empathizer','takecare');
+       //console.log(timeOut);
+       //clearTimeout(timeOut);
+       
+       //intervalId=setInterval(greet,1000,'Empathizer','take care')//it will great after every one second
+       //clearInterval(intervalId);
+
+
+       function displayTime()
+       {
+        time =new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML = time;
+       }
+       intervalId=setInterval(displayTime,1000);
+       clearInterval(intervalId)
+    </script>
+</body>
+</html>

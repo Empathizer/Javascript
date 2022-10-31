@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interaction alert prompt</title>
+</head>
+<body>
+    <div class="container">
+        This is a page
+    </div>
+    <script>
+        //alert in in-browser javascript  -doesnot return anything
+       //alert("this is a message");//it will open a small window(modale) untill this window cannot closed you cannot click on website 
+       
+       //prompt in Js
+       //let name = prompt("what is your name?","Guest");
+       //console.log(name);
+       
+       //confirm
+       //double confirmation process in websites 
+       let deletepost=confirm("do you really want to delete this post")
+       if(deletepost)
+       {
+        console.log("your post has been deleted successfuly")
+       }
+       else{
+       console.log("your post hasnot been deleted");
+       }
+    </script>
+</body>
+</html>

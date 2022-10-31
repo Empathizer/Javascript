@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Events and listening to events in Jvascript </title>
+</head>
+<style>
+    #btn{
+        padding: 8px 16px;
+        color: blue;
+        border: 2px solid black;
+        font-weight: bold;
+        background-color:red;
+    }
+</style>
+<body>
+    <!-- Browser events
+    click
+    contextmenu(right click with mouse)
+    mouseup/mouseup
+    mouseover/mouseout
+    mousemove
+    
+    submit
+    focus
+
+    DOMContentloaaded
+
+    transmitted -->
+
+    <div class="container">
+        <h1>Heading 1122</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor provident soluta ratione corporis sunt, quaerat perspiciatis laboriosam delectus repudiandae, sapiente debitis veniam officia? Cum molestiae, iusto dolor ad, dignissimos deleniti minima accusantium eum veniam ea nostrum ratione atque neque illo.</p>
+
+    </div>
+    <button id="btn" onclick="hide()">Show/hide</button> <!-- onclick is an event-->
+    <script>
+        let para =document.getElementById('para');
+        para.addEventListener('mouseover', function run(){   //mouseover is an event
+        alert ('mouse Inside')
+        });
+        
+        function hide(){
+        let btn = document.getElementById('btn');
+        let para= document.getElementById('para');
+        if(para.style.display!='none'){
+        para.style.display='none';
+        }else{
+            para.style.display = 'block';
+        }
+    }
+    </script>
+</body>
+</html>

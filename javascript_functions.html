@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> string Functions</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <script>
+        var str = "this is a string";
+        console.log(str);
+        //first ocuurance of substring
+        var position = str.indexOf('is');
+        console.log(position);
+
+        //last ocuurance of substring
+        var position = str.lastIndexOf('is');
+        console.log(position);
+
+        //substring from a string
+       // var substr =str.slice(1,7);
+      // var substr =str.substring(1,7);//slice can take negative values but substring cannot take negative values
+      var substr1 = str.substr(1,7);//first argument is for from where we are starting and secong is for lenth of charachter of how much you want
+      console.log(substr1);
+
+      //var replaced = str.replace('str','empathizer');
+      //console.log(str)
+      //console.log(replaced)
+
+      console.log(str.toUpperCase()); //FOR PRINTING STRING IN UPPER CASE
+      console.log(str.toLowerCase());// - - -                   lower caes
+      var newString = str.concat('Newstring');
+      console.log(newString);
+      var strWithWhitespaces = "this contain            whitespaces      ";  
+      console.log(strWithWhitespaces)
+      console.log(strWithWhitespaces.trim)  //trim will remove white spaces from string.
+      //extracting character from string
+      var char2=str.charAt(2);
+      console.log(char2);
+     //slicing of string
+     console.log(str[2]);
+    </script>
+</body>
+</html>

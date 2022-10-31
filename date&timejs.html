@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and time</title>
+</head>
+<body>
+    <div class="container">
+        container is here
+    </div>
+    <script>
+        //console.log(date & time)
+        //let now = new Date();//here date is an object
+        //console.log(now)
+        
+        //let dt = new Date();//here date is an object
+        //console.log(dt);
+
+        //let newDate =new Date("2029-09-30");
+        //console.log(newDate)
+
+        //let newDate=new Date(year,month,date,hours,minutes,seconds,miliseconds);
+        let newDate=new Date(3020,4,25,3,46,9,34);
+        console.log(newDate);
+
+        let yr = newDate.getFullYear();
+        console.log("the year is",yr);
+
+        let dt = newDate.getDate();
+        console.log("the date  is",dt);
+
+        newDate.setDate(15);
+        console.log(newDate)
+    </script>
+</body>
+</html>
